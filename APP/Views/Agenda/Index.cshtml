@@ -1,0 +1,79 @@
+@model List<Tarea_4_Agenda_App.Models.Contact>
+
+@{
+	ViewData["Title"] = "Agenda de Contactos";
+}
+
+<div class="container mt-5">
+	<h2>Agenda de Contactos</h2>
+
+	@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+	{
+		<div id="mensajeErrorAgenda" class="alert alert-danger">
+			@ViewBag.ErrorMessage
+		</div>
+	}
+	else
+	{
+		<div id="mensajeErrorAgenda" style="display:none;"></div>
+	}
+
+	<div class="card mb-4">
+		<div class="card-header">
+			<h5>Crear Nuevo Contacto</h5>
+		</div>
+		<div class="card-body">
+			<form method="post" action="/agenda/create">
+				<div class="row mb-3">
+					<div class="col-md-6">
+						<label for="nombreContact">Nombre</label>
+						<input type="text" id="nombreContact" name="Nombre" class="form-control" required />
+					</div>
+					<div class="col-md-6">
+						<label for="telefonoContact">Teléfono</label>
+						<input type="text" id="telefonoContact" name="Telefono" class="form-control" required />
+					</div>
+				</div>
+				<button type="submit" id="btnGuardarContacto" class="btn btn-success">Guardar Contacto</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header">
+			<h5>Contactos</h5>
+		</div>
+		<div class="card-body">
+			@if (Model.Count > 0)
+			{
+				<table class="table table-striped" id="tablaContactos">
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Teléfono</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var contact in Model)
+						{
+							<tr>
+								<td>@contact.Nombre</td>
+								<td>@contact.Telefono</td>
+								<td>
+									<form method="post" action="/agenda/delete/@contact.Id" style="display:inline;">
+										<button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+									</form>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			}
+			else
+			{
+				<div id="mensajeTablaVacia">No hay contactos registrados</div>
+			}
+		</div>
+	</div>
+</div>

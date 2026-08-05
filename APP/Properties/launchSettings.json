@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Tarea_4_Agenda_App": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:13094;http://localhost:13095"
+    }
+  }
+}
