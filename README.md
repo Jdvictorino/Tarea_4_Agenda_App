@@ -75,9 +75,9 @@ La aplicación se iniciará en: **http://localhost:5000**
 
 Use las siguientes credenciales para iniciar sesión:
 
-| Campo | Valor |
-|-------|-------|
-| **Usuario** | `admin` |
+| Campo          | Valor      |
+| -------------- | ---------- |
+| **Usuario**    | `admin`    |
 | **Contraseña** | `admin123` |
 
 ---
@@ -85,33 +85,40 @@ Use las siguientes credenciales para iniciar sesión:
 ## 📱 Uso de la Aplicación
 
 ### 1. **Pantalla de Login**
+
 - Accede a `http://localhost:5000`
 - Ingresa el usuario y contraseña
 - Presiona "Iniciar Sesión"
 
 ### 2. **Pantalla de Agenda**
+
 Una vez autenticado, podrás:
 
 #### ➕ **Crear un contacto**
+
 1. Completa los campos:
    - **Nombre**: Nombre del contacto
    - **Teléfono**: Número de teléfono
 2. Presiona "Guardar"
 
 #### 📖 **Ver contactos**
+
 - La lista se muestra automáticamente en la página principal
 
 #### ✏️ **Actualizar un contacto**
+
 1. Encuentra el contacto en la lista
 2. Modifica los datos
 3. Presiona "Guardar cambios"
 
 #### ❌ **Eliminar un contacto**
+
 1. Localiza el contacto
 2. Presiona "Eliminar"
 3. Confirma la acción
 
 ### 3. **Cerrar Sesión**
+
 - Presiona el botón "Cerrar Sesión" en la esquina superior
 
 ---
@@ -129,13 +136,8 @@ dotnet run --project APP\Tarea_4_Agenda_App.csproj
 ### Paso 2: Ejecutar las pruebas (en otra terminal)
 
 ```bash
-# Ejecutar todas las pruebas
 dotnet test TEST\Tarea_4_Pruebas_Automatizadas.csproj
-
-# Ejecutar con output detallado
 dotnet test TEST\Tarea_4_Pruebas_Automatizadas.csproj --verbosity detailed
-
-# Listar todas las pruebas disponibles
 dotnet test Tarea_4_Agenda_App.slnx --list-tests
 ```
 
@@ -161,7 +163,7 @@ TEST\Capturas\
 
 ## 👨‍💻 Autor
 
-Juan Victorino 
+Juan Victorino
 matricula 20220900
 
 ---
