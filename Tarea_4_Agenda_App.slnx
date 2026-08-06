@@ -1,8 +1,8 @@
 <Solution>
-  <Folder Name="/APP/">
+  <Folder Name="APP">
     <Project Path="APP/Tarea_4_Agenda_App.csproj" />
   </Folder>
-  <Folder Name="/TEST/">
+  <Folder Name="TEST">
     <Project Path="TEST/Tarea_4_Pruebas_Automatizadas.csproj" />
   </Folder>
 </Solution>
