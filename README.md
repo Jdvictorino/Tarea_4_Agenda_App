@@ -50,7 +50,7 @@ Tarea_4_Agenda_App/
 ### 1. Navegar a la raíz del proyecto
 
 ```bash
-cd "D:\Desarrollo de Software\Proyectos\Proyectos_Programacion_III\Tarea_4_Agenda_App"
+\Tarea_4_Agenda_App
 ```
 
 ### 2. Compilar la solución completa (app + pruebas)
@@ -163,7 +163,7 @@ TEST\Capturas\
 
 ## 👨‍💻 Autor
 
-Juan Victorino
-matricula 20220900
+-Juan Victorino
+-Matricula 20220900
 
 ---
